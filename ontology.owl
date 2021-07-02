@@ -1,0 +1,5263 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sounak/ontologies/2021/5/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sounak/ontologies/2021/5/untitled-ontology-2">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>  
+	<Declaration>
+	<Class IRI="#property"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#person"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#address"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#address"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#transaction_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#address"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#address"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#raw_address"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#raw_address"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#city"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#county"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#county"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#state"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#zip_code"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#zip_code"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#recommended_zip_code"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#recommended_zip_code"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#zip_code_source_used"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#zip_code_source_used"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#pb_zip_code"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#pb_zip_code"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#pre_direction"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#pre_direction"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#post_direction"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#post_direction"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#street_number"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#street_number"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#street"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#street"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#street_type"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#street_type"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#address_type"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#address_type"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#address_used_to_geocode"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#address_used_to_geocode"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#geolocation_result"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#geolocation_result"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#parcel_number"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#parcel_number"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#pretty_address"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#pretty_address"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#pretty_street"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#pretty_street"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#zoning_code"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#zoning_code"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#unit_number"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#unit_number"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#unit_line"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#unit_line"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#unit_type"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#unit_type"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#address_corrected"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#address_corrected"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#__audit_created_at__"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#__audit_created_by__"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#address"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#neighbourhoods"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#neighbourhoods"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#neighborhoods"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#neighborhoods"/>
+	<Class IRI="#neighbourhoods"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#amenities"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#amenities"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#amenity"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#amenity"/>
+	<Class IRI="#amenities"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#city_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#city_id"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#city_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#city_id"/>
+	<Class IRI="#city_id"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_bool_details"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_bool_details"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#key"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#key"/>
+	<Class IRI="#listing_bool_details"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#value"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#value"/>
+	<Class IRI="#listing_bool_details"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_free_text_details"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_free_text_details"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_numeric_details"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_numeric_details"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_text_details"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_text_details"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#location"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#location"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#latitude"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#latitude"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#longitude"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#longitude"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#geo_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#geo_id"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#lat_long_is_overridden"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#lat_long_is_overridden"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#neighborhood_is_overridden"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#neighborhood_is_overridden"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#trust_input_address"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#trust_input_address"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#advertised_neighborhood"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#advertised_neighborhood"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#google_geocoding_longitude"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#google_geocoding_longitude"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#google_geocoding_latitude"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#google_geocoding_latitude"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#zipcode"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#geom_objinfo_geo_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#geom_objinfo_geo_id"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#county_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#county_id"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#zipcode_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#zipcode_id"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#state_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#state_id"/>
+	<Class IRI="#location"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#school_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#school_id"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#school_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#school_id"/>
+	<Class IRI="#school_id"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#structure"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#structure"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#living_area"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#living_area"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#living_area_units"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#living_area_units"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#living_area_source"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#living_area_source"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#built_size_in_square_feet"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#built_size_in_square_feet"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#lot_size_in_square_feet"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#lot_size_in_square_feet"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#square_feet"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#square_feet"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#lot_size_in_square_feet_raw"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#lot_size_in_square_feet_raw"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#lot_size_in_square_feet_integer"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#lot_size_in_square_feet_integer"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#building_year_opened"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#building_year_opened"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#floor"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#floor"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#bathrooms"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#bathrooms"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#bedrooms"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#bedrooms"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#full_bathrooms"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#full_bathrooms"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#half_bathrooms"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#half_bathrooms"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#total_bathrooms"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#total_bathrooms"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#total_rooms"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#total_rooms"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#legal_room_count"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#legal_room_count"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#lot"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#lot"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#notes"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#property_type"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#property_type"/>
+	<Class IRI="#structure"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#root"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#root"/>
+	<Class IRI="#property"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#source_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#source_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#building_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#building_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#property_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#property_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#compass_property_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#compass_property_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#primary_listing_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#primary_listing_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_revision_status"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_revision_status"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#internal_only"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#internal_only"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_status_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_status_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_status"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_status"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#sale_status_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#sale_status_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#current_price"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#current_price"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#building_id_sha"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#building_id_sha"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#close_date"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#close_date"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#close_price"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#close_price"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#coming_soon_date"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#coming_soon_date"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#coming_soon_price"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#coming_soon_price"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#consumer_searchable"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#consumer_searchable"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#contract_date"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#contract_date"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#contract_price"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#contract_price"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#is_public_record"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#is_public_record"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#last_status_change_date"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#last_status_change_date"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#list_date"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#list_date"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_external_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_external_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#source_external_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#source_external_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#list_price"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#list_price"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#latest_transaction"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#latest_transaction"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#major_contributing_dataset"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#major_contributing_dataset"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#pre_close_price"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#pre_close_price"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#private_exclusive_timestamp"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#private_exclusive_timestamp"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#private_exclusive_price"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#private_exclusive_price"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#date_enter_market"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#date_enter_market"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#date_exit_market"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#date_exit_market"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#days_on_market_from_feed"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#days_on_market_from_feed"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#last_modified_time"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#last_modified_time"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#last_modified_time_in_messier"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#last_modified_time_in_messier"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#cumulative_days_on_market_from_feed"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#cumulative_days_on_market_from_feed"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#cumulative_time_on_market_days"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#cumulative_time_on_market_days"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#price_per_square_foot"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#price_per_square_foot"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#time_at_current_price_days"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#time_at_current_price_days"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#time_on_market_days"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#time_on_market_days"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#mls_coming_soon_timestamp"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#mls_coming_soon_timestamp"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#mls_coming_soon_price"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#mls_coming_soon_price"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#total_monthly_sales_charges"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#total_monthly_sales_charges"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#total_monthly_sales_charges_incl_taxes"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#total_monthly_sales_charges_incl_taxes"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_tax_id"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_tax_id"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#co_broker_fee_percent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#co_broker_fee_percent"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#listing_type"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#listing_type"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#sale_status"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#sale_status"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#sales_transaction_type"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#sales_transaction_type"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#rental_status"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#rental_status"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#rental_transaction_type"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#rental_transaction_type"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#short_term_rental_status"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#short_term_rental_status"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#short_term_rental_transaction_type"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#short_term_rental_transaction_type"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#exclusive_start_date"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#exclusive_start_date"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#exclusive_end_date"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#exclusive_end_date"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#geo_location_result"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#geo_location_result"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#is_off_mls"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#is_off_mls"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#legal_rooms"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#legal_rooms"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#owner1"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#owner1"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#owner2"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#owner2"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#owner_first_name1"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#owner_first_name1"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#owner_first_name2"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#owner_first_name2"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#owner_last_name1"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#owner_last_name1"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#owner_last_name2"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#owner_last_name2"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#owner_type1"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#owner_type1"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#owner_type2"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#owner_type2"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ownership_transfer_date"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ownership_transfer_date"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ownership_transfer_amount"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ownership_transfer_amount"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#property_types"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#property_types"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#is_coop"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#is_coop"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#is_condo"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#is_condo"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#is_condop"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#is_condop"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#is_land"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#is_land"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#is_single_family"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#is_single_family"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#is_townhouse"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#is_townhouse"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#non_image_media_descriptions"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#non_image_media_descriptions"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#date_created"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#date_created"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#shared_notes"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#shared_notes"/>
+	<Class IRI="#root"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#transaction_id"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#email"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#mobile"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#phone"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#company"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#consumer_visible"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#contact_name"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#contact_type"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#license_num"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#mris_agent_id"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#city"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#fax"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#notes"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#state"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#street_address"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#user_id"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#title"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#zipcode"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#additional_url"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#building_url"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#confirmed_ontact"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#contact_info_type"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#owner_email_status"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#owner_type"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#profile_image_url"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#website_url"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#__audit_created_at__"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#__audit_created_by__"/>
+</Declaration>
+	<Declaration>
+	<Class IRI="#AlternativeSellingAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#AlternativeSellingAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#AlternativeSellingAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#AlternativeBuyerAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#AlternativeBuyerAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ClosingContact"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ClosingContact"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#ClosingContact"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#UCAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#UCAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#UCAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ClosingAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ClosingAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#ClosingAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ListingCompany"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ListingCompany"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#ListingCompany"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#managementfirm"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#managementfirm"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#managementfirm"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#CoExclusiveBroker"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#CoExclusiveBroker"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#CoExclusiveBroker"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#AlternativeListingAgent2"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#AlternativeListingAgent2"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#AlternativeListingAgent2"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ListingAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ListingAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#ListingAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#accountexecutive"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#accountexecutive"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#accountexecutive"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#OwnerLandlord"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#OwnerLandlord"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#OwnerLandlord"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#SellingAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#SellingAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#SellingAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#Agent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#Agent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#Agent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#BuildingContact"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#BuildingContact"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#BuildingContact"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#buildingcontacts"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#buildingcontacts"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#buildingcontacts"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#AccessContact"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#AccessContact"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#AccessContact"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ManagementFirm"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ManagementFirm"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#ManagementFirm"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#AlternativeListingAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#AlternativeListingAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#AlternativeListingAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#LeasingOffice"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#LeasingOffice"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#LeasingOffice"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#closingagent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#closingagent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#closingagent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#Owner"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#Owner"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#Owner"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#BuyerAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#BuyerAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#BuyerAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ShowingContact"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ShowingContact"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#ShowingContact"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#SalesOffice"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#SalesOffice"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#SalesOffice"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#AccountExecutive"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#AccountExecutive"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#AccountExecutive"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#BuyersAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#BuyersAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#BuyersAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#AdditionalListingAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#AdditionalListingAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#AdditionalListingAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#RealEstateSalesperson"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#RealEstateSalesperson"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#RealEstateSalesperson"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#Tenant"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#Tenant"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#Tenant"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#ListingContact"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#ListingContact"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#ListingContact"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#Ownerlandlord"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#Ownerlandlord"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#Ownerlandlord"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#CoSellingAgent"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#CoSellingAgent"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#CoSellingAgent"/>
+	</SubClassOf>
+	<Declaration>
+	<Class IRI="#HomebyChoiceLLC"/>
+</Declaration>
+	<SubClassOf>
+	<Class IRI="#HomebyChoiceLLC"/>
+	<Class IRI="#person"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#transaction_id"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#email"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mobile"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#phone"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#company"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#consumer_visible"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_name"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_type"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#license_num"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#mris_agent_id"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#city"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#fax"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#notes"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#state"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#street_address"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#user_id"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#title"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#zipcode"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#additional_url"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#building_url"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#confirmed_ontact"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#contact_info_type"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_email_status"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#owner_type"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#profile_image_url"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#website_url"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_at__"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+	<SubClassOf>
+	<Class IRI="#__audit_created_by__"/>
+	<Class IRI="#HomebyChoiceLLC"/>
+	</SubClassOf>
+</Ontology>
